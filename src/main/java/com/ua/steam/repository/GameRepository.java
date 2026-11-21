@@ -11,4 +11,8 @@ public interface GameRepository {
     Optional<Game> findById(Long id);
 
     Game save(Game game);
+
+    List<Game> findByGenre(String genre);
+
+    boolean deleteById(Long id);
 }
